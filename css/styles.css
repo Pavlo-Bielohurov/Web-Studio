@@ -1,6 +1,7 @@
 body {
     font-family: Roboto, sans-serif;
     color: #434455;
+    background-color: #FFFFFF;
 }
 
 ul {
@@ -20,6 +21,9 @@ button {
     text-align: center;
     color: #2e2f42;}
 
+ .header {}
+
+ 
 .hedear-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -68,7 +72,6 @@ button {
     color: #fff;}
 
 .hero-btn {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         background: #4d5ae5;
 }
 
