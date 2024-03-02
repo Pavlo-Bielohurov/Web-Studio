@@ -15,7 +15,7 @@ button {
 
 .title{font-weight: 700;
     font-size: 36px;
-    line-height: 1.1;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
@@ -97,17 +97,13 @@ button {
         background: #4d5ae5;
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-btn span:hover,
+.hero-btn span:focus {
     color:#404BBF
 }
 
 
-.hero-btn span {font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #fff;}
+
 
 .features {}
     
@@ -136,7 +132,9 @@ button {
 
 .team-list {}
 
-.team-item {}
+.team-item {
+    background-color: #FFFFFF
+}
 
 .team-item-img {}
 
