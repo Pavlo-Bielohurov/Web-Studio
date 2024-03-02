@@ -48,8 +48,12 @@ button {
         color: #2e2f42;
 }
 
-.header-menu-item:hover,
-.header-menu-item:focus {
+.header-menu-link {
+    color: #2e2f42
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
     color: #404bbf
 
 }
