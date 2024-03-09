@@ -60,14 +60,15 @@ img {
     color: #2e2f42;}
 
 
- .header {
- 
+ .header {}
+    
+
+
+ .header-container {
     padding-top: 24px;
     padding-bottom: 24px;
     display: flex;
- }
-
- .header-container {
+    border-bottom: 1px solid #e7e9fc
   
    
  }
