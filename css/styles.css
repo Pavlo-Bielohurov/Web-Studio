@@ -206,11 +206,11 @@ background-color: #404BBF;
 
 
 .features {
+    padding-top: 120px;
+    padding-bottom: 120px;
  }
     
  .features-list { 
-    padding-top: 120px;
-    padding-bottom: 120px;
     display: flex;
     gap: 24px ;
     margin: 0 auto;
