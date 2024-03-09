@@ -215,8 +215,9 @@ background-color: #404BBF;
     gap: 24px ;
     margin: 0 auto;
 }
-    
- .features-item {
+.features-item{}
+
+ .features-item:first-child {
     width:calc((100% - 72) / 4);
  }
     
