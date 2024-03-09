@@ -215,7 +215,8 @@ background-color: #404BBF;
     gap: 24px ;
     margin: 0 auto;
 }
-.features-item{width:calc((100% - 72) / 4);}
+.features-item{
+    flex-basis: calc((100% - 72px) / 4);}
 
 
     
@@ -304,6 +305,7 @@ padding: 32px 0;
 
   .portfolio-item {
     border: 1px solid #e7e9fc;
+    border-top: none;
 width: 360px;
 height: 420px;
 background-color: #fff;
@@ -318,7 +320,6 @@ width: 360px;
 height: 56px;
 padding: 32px 16px;
 border-top: none;
-border: 1px solid #e7e9fc;
     }
 
   .portfolio-item-title {font-weight: 500;
