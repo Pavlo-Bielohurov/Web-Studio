@@ -68,9 +68,9 @@ img {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
-        padding: 16px;
-
 }
+
+
 
 
 
@@ -320,6 +320,10 @@ display: none;
 }
 
 @media screen and (max-width: 767px) {
+
+    .header{
+        padding: 16px;
+    }
     .features-item:not(:last-child) {
         margin-bottom: 72px;
     }
@@ -1137,6 +1141,9 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         max-width: 1158px;
         padding: 0 15px;
     }
+
+    .hedear-logo
+    {margin-right: 76px;}
 
     .header-address-list {
         display: flex;
