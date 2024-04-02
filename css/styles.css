@@ -68,6 +68,8 @@ img {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
+        padding: 16px;
+
 }
 
 
@@ -232,7 +234,7 @@ img {
 
 .hero {
     background: #2e2f42;
-    padding: 72px 52px ;
+    padding: 72px 0 ;
 margin: 0 auto;
 background-image: linear-gradient(
     rgba(46, 47, 66, 0.7), 
@@ -252,6 +254,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         rgba(46, 47, 66, 0.7)),
         url(../images/bg-img/bgimgmob-2x.jpg);}
 }
+
+
 
 
 .hero-title {
@@ -302,7 +306,7 @@ background-color: #404BBF;
 
 .features {
     padding-top: 96px;
-    padding-bottom: 54px;
+    padding-bottom: 96px;
 }
 
 .features-svg-wrap {
@@ -314,12 +318,13 @@ display: none;
 .features-list { 
     margin: 0 auto;
 }
-.features-item:not(:last-child){ 
-    margin-bottom: 72px;
+
+@media screen and (max-width: 767px) {
+    .features-item:not(:last-child) {
+        margin-bottom: 72px;
+    }
 }
 
-
-    
 .features-itam-title {
             font-weight: 700;
             font-size: 36px;
@@ -346,9 +351,6 @@ display: none;
     padding-bottom: 96px;
 }
 
-.mob-container{padding-left: 28px;
-padding-right: 28px;}
-
 .team-title {
     margin-bottom: 72px;
 }
@@ -360,14 +362,14 @@ padding-right: 28px;}
     border-radius: 0 0 4px 4px;
 width: 264px;
 box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+margin: 0 auto;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
+    
     .team-item:not(:last-child){
         margin-bottom: 72px;
     }
-
-    
 }
 .team-item{
 }
@@ -448,9 +450,13 @@ background-color: #fff;
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:not(:last-child){
-    margin-bottom: 48px;
+@media screen and (max-width: 767px) {
+    .portfolio-item:not(:last-child) {
+            margin-bottom: 48px;
+        }
+    
 }
+
 
 .portfolio-item:hover,
 .portfolio-item:focus{
@@ -615,9 +621,15 @@ text-align: center;}
 .form-footer{
 }
 
+.footer-label-email{
+    display: block;
+    margin: 0 auto;
+
+}
+
 .footer-email{border: 1px solid #fff;
     border-radius: 4px;
-    width: 264px;
+    width: 288px;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: transparent;
@@ -916,12 +928,18 @@ background-color: #404BBF;
     .header-menu-list{
         display: flex;
         gap: 40px;
+        
     }
+
+        .hedear-logo{
+            margin-right: 120px;
+        }
 
     .header-nav {
         display: flex;
         align-items: center;
         margin-right: auto;
+        
     }
 
     .header-menu-item {
@@ -932,7 +950,7 @@ background-color: #404BBF;
         color: #2e2f42;
         display: flex;
     }
-    
+
     .header-menu-link {
         padding-top: 24px;
         padding-bottom: 24px;
@@ -978,19 +996,27 @@ background-color: #404BBF;
     .header-address-link:hover,
     .header-address-link:focus {
         color: #404bbf
+}
+
+@media screen and (max-width: 1157px) {
+    .header-address-item:not(:last-child){
+        margin-bottom: 12px;
     }
+}
+
+
 
     .hero{
-        padding: 112px 136px;
+        padding: 112px 0;
         background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
         url(../images/bg-img/bgimgtab.jpg);
     }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero {
         background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -1005,7 +1031,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         margin-bottom: 36px;
     }
     .tab-container{
-        padding: 96px 108px;
+        padding: 0 108px;
     }
 
     .features{
@@ -1026,6 +1052,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 .features-itam-title{
     text-align: left;
+    font-weight: 500;
 }
 
 .team-list{
@@ -1033,17 +1060,28 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 64px;
+    justify-content: center;
+}
+
+.team-item{
 }
 
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 72px;
+    row-gap: 48px;
 }
 
 .portfolio-item{
     flex-basis: calc((100% - 24px) / 2);
+}
+
+
+.footer-logo{
+    display: flex;
+    justify-content: left;
+
 }
 
 .footer-tab{
@@ -1051,11 +1089,18 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 .footer-top{
     display: flex;
-    gap: 24px;
+    
 }
 
 .footer-social-text{
     text-align: left;
+}
+.footer-label-email{
+    margin: 0;
+}
+
+.footer-email{
+    width: 264px;
 }
 
 .footer-email-text{
@@ -1067,10 +1112,21 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     gap: 24px
 }
 
+.footer-btn-email{
+    margin: 0;
+}
+
 .modal{
     width: 408px;
     min-height: 584px;
     padding: 72px 24px 24px 24px;
+}
+
+@media screen and (max-width: 1157px) {
+    .footer-top {
+        gap: 24px;
+    }
+    
 }
 
 }
@@ -1101,15 +1157,16 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
     .hero {
         padding: 188px 0;
+        max-width: 1440px;
         background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
         url(../images/bg-img/bgimg.jpg);
     }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .hero {
         background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -1193,12 +1250,17 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 .footer-conten-wrap{
     margin-right: 120px;
+    margin-bottom: 0;
 
 }
 
 .subscribe-container{
     margin-left: auto;
     
+}
+
+.footer-social-wrap{
+    margin-bottom: 0;
 }
 
 }
