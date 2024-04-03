@@ -110,11 +110,14 @@ img {
 .open-mob-menu{
     background-color: transparent;
     border: none;
+    padding: 0;
+    line-height: 0;
 }
 
 .mob-menu {
     position: fixed;
     top: 0;
+    left: 0;
     background-color: #fff;
     width: 100vw;
     height: 100%;
@@ -319,15 +322,6 @@ display: none;
     margin: 0 auto;
 }
 
-@media screen and (max-width: 767px) {
-
-    .header{
-        padding: 16px;
-    }
-    .features-item:not(:last-child) {
-        margin-bottom: 72px;
-    }
-}
 
 .features-itam-title {
             font-weight: 700;
@@ -369,12 +363,6 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 margin: 0 auto;
 }
 
-@media screen and (max-width: 767px) {
-    
-    .team-item:not(:last-child){
-        margin-bottom: 72px;
-    }
-}
 .team-item{
 }
 
@@ -453,14 +441,6 @@ padding: 32px 16px;
 background-color: #fff;
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-@media screen and (max-width: 767px) {
-    .portfolio-item:not(:last-child) {
-            margin-bottom: 48px;
-        }
-    
-}
-
 
 .portfolio-item:hover,
 .portfolio-item:focus{
@@ -628,7 +608,6 @@ text-align: center;}
 .footer-label-email{
     display: block;
     margin: 0 auto;
-
 }
 
 .footer-email{border: 1px solid #fff;
@@ -642,7 +621,6 @@ text-align: center;}
     line-height: 2;
     letter-spacing: 0.04em;
     color: #ffffff;
-    margin-bottom: 16px;
 
 }
 
@@ -914,6 +892,33 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-btn-submit:hover, 
 .modal-btn-submit:focus{
 background-color: #404BBF;
+}
+
+@media screen and (max-width: 767px) {
+
+    .header {
+        padding: 16px 0;
+    }
+
+    .features-item:not(:last-child) {
+        margin-bottom: 72px;
+    }
+
+    .team-item:not(:last-child) {
+        margin-bottom: 72px;
+    }
+
+    .portfolio-item:not(:last-child) {
+        margin-bottom: 48px;
+    }
+
+    .footer-top {
+        margin-bottom: 72px;
+    }
+
+    .footer-label-email {
+        margin-bottom: 16px;
+    }
 }
 
 @media screen and (min-width: 768px) {
