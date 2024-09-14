@@ -9,4 +9,14 @@
   function toggleModal() {
     refs.modal.classList.toggle("is-open");
   }
+  const refsM = {
+    openMenuBtn: document.querySelector("[data-menu-open]"),
+    closeMenuBtn: document.querySelector("[data-menu-close]"),
+    menu: document.querySelector("[data-menu]"),
+  };
+  refsM.openMenuBtn.addEventListener("click", toggleMenu);
+  refsM.closeMenuBtn.addEventListener("click", toggleMenu);
+  function toggleMenu() {
+    refsM.menu.classList.toggle("is-open");
+  }
 })();
